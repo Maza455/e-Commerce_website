@@ -24,6 +24,16 @@ header, footer {
   background-image: linear-gradient(to right, green, yellow);
 }
 
+header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo img {
+  max-width: 100px;
+  margin-right: 20px;
+}
+
 nav ul {
   list-style: none;
   padding: 0;
@@ -37,11 +47,102 @@ nav ul li {
 nav a {
   text-decoration: none;
   color: #fff;
+  font-weight: bold;
+  font-size: 1rem;
+  transition: color 0.5s;
+}
+
+nav a:hover {
+  color: 3498db;
 }
 
 /* Section styles */
 section {
   padding: 2rem;
+}
+
+/* slider.css */
+.sales-slider {
+  margin: 20px 0;
+  overflow: hidden;
+  width: 100%;
+}
+
+.image-slider {
+  display: flex;
+  animation: slide 10s infinite;
+}
+
+.slide {
+  flex: 0 0 50%;
+  text-align: center;
+  display: flex;
+}
+
+.slide img {
+  max-width: 100%;
+  border: 1px solid #ddd;
+  padding: 1rem;
+  margin: 0.5rem;
+  display: inline-block;
+  width: 100%;
+  height: auto;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.slide img:hover {
+  transform: scale(1.05);
+}
+
+@keyframes slide {
+  0%, 100% { transform: translateX(0%); }
+  25% { transform: translateX(0%); }
+  50% { transform: translateX(-100%); }
+  75% { transform: translateX(-100%); }
+  100% { transform: translateX(-200%); }
+}
+
+product-info-toggle {
+  display: none;
+}
+
+.product-info-label {
+  cursor: pointer;
+  color: blue;
+  text-decoration: underline;
+}
+
+.product-info-toggle:checked + .product-info {
+  display: block;
+}
+
+.product-info {
+  display: none;
+  padding: 10px;
+  text-align: left;
+  background: #f9f9f9;
+}
+
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 10px;
+}
+
+.social-media {
+  margin-top: 10px;
+}
+
+.social-media a {
+  color: white;
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+.social-media a:hover {
+  text-decoration: underline;
 }
 
 /* Product styles */
@@ -51,7 +152,7 @@ section {
   margin: 1rem;
   text-align: center;
   display: inline-block;
-  width: 30%;
+  width: 20%;
 }
 
 .product img {
@@ -62,4 +163,3 @@ section {
   font-weight: bold;
   color: #007BFF;
 }
-

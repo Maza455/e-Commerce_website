@@ -1,34 +1,16 @@
-<!-- <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="./CSS/style.css">
-
-    <title>Home</title>
-</head>
-<body>
-    <nav>
-        <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="./HTML/products.html">Products</a></li>
-          <li><a href="./HTML/about.html">About</a></li>
-          <li><a href="./HTML/contact.html">Contact</a></li>
-        </ul>
-      </nav>
-      
-</body>
-</html> -->
-
-
 <!DOCTYPE html>
 <html>
 <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" type="text/css" href="./CSS/style.css">
 </head>
 <body>
   <header>
-    <h1>E-commerce Website</h1>
+    <div class="logo">
+      <img src="https://i.postimg.cc/85VzxD5s/3848c688e6b42b06a4e8f71c6ed467ee7253c392.webp" alt="E-commerce Store">
+    </div>
+    <h1><u>E-commerce Store</u></h1>
     <nav>
       <ul>
         <li><a href="#home">Home</a></li>
@@ -38,8 +20,53 @@
       </ul>
     </nav>
   </header>
+
+  <section class="sales-slider">
+    <div class="image-slider">
+      <div class="slide">
+        <input type="checkbox" class="product-info-toggle" id="product1-info-toggle">
+        <label class="product-info-label" for="product1-info-toggle">Show Product Info</label>
+        <img src="https://i.postimg.cc/W42YC8tc/zara-890x614.png" alt="Product-1">
+        <h3>Product 1</h3>
+        <p>On Sale - R950</p>
+      </div>
+      <div class="slide">
+        <img src="https://i.postimg.cc/gjx6Jxk2/90807946-800-800.png" alt="Product-2">
+        <h3>Product 2</h3>
+        <p>On Sale - R850</p>
+      </div>
+      <div class="slide">
+        <img src="https://i.postimg.cc/Y0Lwj7cH/download-copy-4.jpg" alt="Product-3">
+        <h3>Product 3</h3>
+        <p>On Sale - R(450 to 1300)</p>
+      </div>
+      <div class="slide">
+        <img src="https://i.postimg.cc/Dz7JGjyD/swisswatchexports.webp" alt="Product-4">
+        <h3>Product 4</h3>
+        <p>On Sale - R(650 to 3000)</p>
+      </div>
+      <div class="slide">
+        <img src="https://i.postimg.cc/9MSv6kDN/9i4a7070-3490518288.jpg" alt="Product-5">
+        <h3>Product 5</h3>
+        <p>On Sale - R(350 to 2000)</p>
+      </div>
+      <div class="slide">
+        <img src="https://i.postimg.cc/kGccd64Y/ZARA-PIC-1.webp" alt="Product-6">
+        <h3>Product 6</h3>
+        <p>On Sale - R2000</p>
+      </div>
+    </div>
+  </section>
+
   <footer>
+    <div class="social-media">
+      <a href="https://www.facebook.com" target="_blank">Facebook</a>
+      <a href="https://www.linkedin.com" target="_blank">LinkedIn</a>
+      <a href="https://www.github.com" target="_blank">GitHub</a>
+
+    </div>
     &copy; 2023 My Clothing Shop. All rights reserved.
-</footer>
+  </footer>
 </body>
 </html>
+
