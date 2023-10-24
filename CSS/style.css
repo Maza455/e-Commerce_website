@@ -37,7 +37,7 @@ header {
   margin-right: 20px;
 }
 
-nav ul {
+ nav ul {
   list-style: none;
   padding: 0;
 }
@@ -95,11 +95,12 @@ nav a:hover {
   margin: 0 auto;
   padding: 20px;
   border: 1px solid #ddd;
-  background-color: #f9f9f9;
+  background-color: #78e07f;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   display: flex;
   flex-direction: column;
   align-items: center;
+  position: relative;
   animation: pulse 2s infinite; /* Add animation properties */
 }
 
